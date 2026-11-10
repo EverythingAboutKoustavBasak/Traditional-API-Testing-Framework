@@ -1,0 +1,51 @@
+
+# ==============================
+# Maven build output
+# ==============================
+target/
+*.class
+/bin/
+# ==============================
+# IDE - Eclipse
+# ==============================
+.classpath
+.project
+.settings/
+.metadata/
+
+# ==============================
+# Logs
+# ==============================
+logs/
+*.log
+
+# ==============================
+# Test reports
+# ==============================
+allure-results/
+allure-report/
+test-output/
+reports/
+
+# ==============================
+# Environment and secrets
+# ==============================
+.env
+.env.*
+!.env.example
+secrets.properties
+credentials.properties
+
+# ==============================
+# Operating system files
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Temporary files
+# ==============================
+*.tmp
+*.bak
+*.swp

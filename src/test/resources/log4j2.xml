@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+
+    <Appenders>
+
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+
+            <!-- Defines how logs appear in the console -->
+            <PatternLayout
+                pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %level %logger::%M::%L %msg %n"/>
+
+        </Console> 
+
+
+        <!-- File Appender -->
+        <File name="FileLogger"
+              fileName="logs/api_automation.log"
+              append="false">
+
+            <!-- Defines how logs appear in the log file -->
+            <PatternLayout
+                pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %level %logger::%M::%L %msg %n"/>
+
+        </File>
+
+    </Appenders>
+
+
+    <!-- Logger Configuration -->
+    <Loggers>
+
+        <Root level="info">
+
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+
+        </Root>
+
+    </Loggers>
+
+</Configuration>

@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>RestAssuredAPIAutomatioFramework</groupId>
+	<artifactId>APIAutomationFramework</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<description>Rest Assured API Automation Framework, built in Java,
+		TestNg </description>
+
+
+	<!-- Java Version -->
+	<properties>
+		<maven.compiler.release>11</maven.compiler.release>
+	</properties>
+
+
+	<dependencies>
+
+		<!-- 1. REST Assured: API requests and response validation -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>6.3.0</version>
+		</dependency>
+
+		<!-- 2. TestNG: Test execution and assertions -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.12.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- 3. Jackson: JSON serialization and deserialization -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.20.1</version>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>json-schema-validator</artifactId>
+			<version>6.0.0</version>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.26.1</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.26.1</version>
+			<scope>compile</scope>
+		</dependency>
+
+
+	</dependencies>
+
+
+</project>
